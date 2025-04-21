@@ -5,34 +5,50 @@
 <head>
 	<link rel="stylesheet" href="styles.css">
 	<style>
-		body{
+		:root{
 			background-color:rgb(135, 206, 235);
-
+		}
+		article p:first-child{
+			background-color:black;
+			color:white;
+			margin:-10px;
+		}
+		article p:nth-child(2){
+			/*Standard text color*/
+		}
+		article p::last-child{
+			color:red;
+		}
 		.l1{
 			background-color:white;
+			font-size:22px;
+		}
+		li{
+			width:50%;
+			padding:10px;
 		}
 			.l3{
-				background-color:white;
+				background-color:pink;
 			}
 			.l5{
 				background-color:white;
+				font-size:22px;
 			}
 	</style>
-	</style>
+	
 </head>
 
 <body>
 	<!-- the entire body must be written by student -->
     <script type="text/javascript" src="./script.js">
 </script>
-
-	<p style="background-color:black;
-			color:white; margin:-10px;">First paragraph</p>
+	<article>
+	<p>First paragraph</p>
 
 	<p>There are over three hundred species and tens of thousands of cultivars. The flowers of the rose grow in many different colors, from the well-known red rose or yellow rose and sometimes white or purple rose.</p>
 	<p>Roses belong to the family of plants called Rosaceae. All roses were originally wild: they grew in North America, Europe, northwest Africa and many parts of Asia and Oceania.</p>
-	<p style="color:red;">Most roses have spines (incorrectly called prickles) on their stems. This is a common defense system in plants.</p>
-
+	<p>Most roses have spines (incorrectly called prickles) on their stems. This is a common defense system in plants.</p>
+	</article>
 <ul>
 	<li class="l1">First Item</li>
 	<li style="background-color:gray">Second Item</li>
